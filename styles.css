@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.toggle {
+    display: inline-flex;
+    background-color: #1E1E1E;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.toggle input {
+    display: none;
+}
+
+.toggle label {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.toggle input:checked + label {
+    background-color: #5A67D8;
+    color: #ffffff;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.dropdown select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #333333;
+    background-color: #1E1E1E;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    background-color: #1E1E1E;
+    border: 1px solid #333333;
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    text-align: left;
+    color: #ffffff;
+    position: relative;
+}
+
+.card h3 {
+    margin: 0 0 10px 0;
+}
+
+.card p {
+    margin: 0;
+    font-size: 14px;
+    color: #aaaaaa;
+}
+
+.card::after {
+    content: attr(data-strategy-count);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #5A67D8;
+    font-size: 14px;
+}
+
+.empty-state {
+    text-align: center;
+    margin-top: 20px;
+    color: #aaaaaa;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategy Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="toggle-container">
+            <div class="toggle">
+                <input type="radio" id="bullish" name="view" value="Bullish" checked>
+                <label for="bullish">Bullish</label>
+                <input type="radio" id="bearish" name="view" value="Bearish">
+                <label for="bearish">Bearish</label>
+                <input type="radio" id="rangebound" name="view" value="RangeBound">
+                <label for="rangebound">RangeBound</label>
+                <input type="radio" id="volatile" name="view" value="Volatile">
+                <label for="volatile">Volatile</label>
+            </div>
+        </div>
+        <div class="dropdown">
+            <select id="dateDropdown"></select>
+        </div>
+        <div class="cards-container" id="cardsContainer"></div>
+        <div class="empty-state" id="emptyState"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
